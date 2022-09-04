@@ -1,0 +1,14 @@
+version: "3.8"
+services:
+  fleetdb:
+    image: mongo:latest
+    container_name: "fleetdb"
+    ports:
+      - 27017:27017
+  spring-mongodb:
+    image: spring-mongodb:1.0
+    container_name: spring-mongodb
+    ports:
+      - 8080:8080
+    links:
+      - fleetdb
