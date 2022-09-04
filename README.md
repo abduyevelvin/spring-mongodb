@@ -8,7 +8,7 @@ There are 2 ways to run the application:
  - mvn clean install
  - mvn spring-boot:run
 
-    Or using docker-compose command (before need uncomment following line in application.properties file "#spring.data.mongodb.host=fleetdb"):
+Or using docker-compose command (before need uncomment following line in application.properties file "#spring.data.mongodb.host=fleetdb"):
  - docker pull mongo:latest
  - docker-compose up
 
